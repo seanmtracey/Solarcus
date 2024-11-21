@@ -5,15 +5,32 @@
   "main": "main.js",
   "scripts": {
     "start": "electron .",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "electron-builder"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "electron": "^32.2.5",
     "menubar": "^9.5.1",
     "node-fetch": "^3.3.2"
   },
-  "type" : "module"
+  "type": "module",
+  "devDependencies": {
+    "electron": "^32.2.5",
+    "electron-builder": "^25.1.8"
+  },
+  "build": {
+  "appId": "com.smt.solarcus",
+  "productName": "Solarcus",
+  "files": [
+    "main.js",
+    "sunrise.png",
+    "sunset.png",
+    "node_modules/**/*"
+  ],
+  "mac": {
+    "category": "public.app-category.utilities"
+  }
+}
 }
