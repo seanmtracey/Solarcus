@@ -1,4 +1,4 @@
-# Sunrise Sunset Menubar App
+# Solarcus
 
 This is a simple Electron-based menubar application that displays the sunrise and sunset times for London in your macOS menubar. The icon and text dynamically update based on the current time of day.
 
